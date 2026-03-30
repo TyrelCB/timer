@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Splash Stopwatch</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background" aria-hidden="true">
+      <div class="orb orb-one"></div>
+      <div class="orb orb-two"></div>
+      <div class="orb orb-three"></div>
+    </div>
+
+    <main class="app">
+      <section class="card" aria-labelledby="timer-title">
+        <p class="eyebrow">Color Splash Stopwatch</p>
+        <h1 id="timer-title">Simple Stopwatch</h1>
+
+        <p class="status" id="status" data-state="ready">Ready</p>
+
+        <div class="display" id="display" aria-live="polite">00:00:00.00</div>
+
+        <div class="controls">
+          <button id="startButton" class="button button-start" type="button">
+            Start
+          </button>
+          <button
+            id="pauseButton"
+            class="button button-pause"
+            type="button"
+            disabled
+          >
+            Pause
+          </button>
+          <button id="resetButton" class="button button-reset" type="button">
+            Reset
+          </button>
+        </div>
+
+        <p class="hint">Press the space bar to start or pause.</p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
