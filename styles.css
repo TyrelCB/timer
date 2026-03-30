@@ -191,6 +191,28 @@ h1 {
   color: rgba(255, 255, 255, 0.7);
 }
 
+.sync-status {
+  margin: 1.1rem 0 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.sync-status[data-state="syncing"] {
+  color: #7ce8ff;
+}
+
+.sync-status[data-state="synced"] {
+  color: #7affcf;
+}
+
+.sync-status[data-state="local"] {
+  color: #ffd37a;
+}
+
+.sync-status[data-state="stale"] {
+  color: #ffb5f1;
+}
+
 @keyframes drift {
   from {
     transform: translate3d(-18px, -10px, 0) scale(0.98);
